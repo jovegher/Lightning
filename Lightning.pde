@@ -15,9 +15,9 @@ void setup()
 void draw()
 {
   stroke(255, 255, b);
-  fill(0,0,0,30);
-  rect(0,0,500,500);
-  
+  fill(0, 0, 0, 30);
+  rect(0, 0, 500, 500);
+
   if (endY < 475)
   {
     strokeWeight(3);
@@ -27,14 +27,16 @@ void draw()
     startX = endX;
     startY = endY;
   }
-  
+
   strokeWeight(0);
   fill(120, 40, 0);
   rect(-50, 450, 600, 400);
   fill(185, 184, 184);
   rect(0, 365, 120, 100);
-
-  System.out.println(mouseX + " " + mouseY);
+  strokeWeight(1);
+  stroke(0);
+  line(0, 365, 120, 465);
+  line (0, 465, 120, 365);
 }
 void mousePressed()
 {
